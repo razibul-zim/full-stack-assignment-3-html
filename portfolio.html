@@ -23,51 +23,53 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-
-    <!--body_background color-->
-    <style>
-      body {
-        background-color: bisque;
-        font-family: "Oswald", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
       <ul>
         <!--create relative link-->
+        <br />
         <li>
           <a href="#Introduction"> Introduction</a>
         </li>
+        <br />
         <li>
           <a href="#Skill"> Skill</a>
         </li>
+        <br />
         <li>
           <a href="#Project"> Project</a>
         </li>
+        <br />
         <li>
           <a href="#Education and Experience">Education and Experience</a>
         </li>
+        <br />
         <li>
           <a href="#Contact Form">Contact Form</a>
         </li>
+        <br />
       </ul>
     </nav>
 
-    <header id="Introduction">
-      <h1>Razibul Islam Zim</h1>
-      <br />
-      <img
+    <header id="Introduction" class="card">
+      <div>
+        <h1><em>Razibul Islam Zim</em></h1>
+        <br />
         <img
-        src="./Image/razibul.jpg"
-        alt="Razibul Islam Zim"
-        height="100"
-      />
-      <p><em>A passionate Penetration Tester and Frontend Developer</em></p>
+          <img
+          src="./Image/razibul.jpg"
+          alt="Razibul Islam Zim"
+          height="100"
+        />
+        <p><em>A passionate Penetration Tester and Frontend Developer</em></p>
+      </div>
+
       <hr />
       <!--Section:Introduction-->
       <h2>
-        <mark><em>Introduction:</em></mark>
+        <em>Introduction:</em>
       </h2>
       <p>
         My name is razibul islam Zim.I live in khulna Bangladesh.Now, I am
@@ -77,14 +79,14 @@
       </p>
       <!--END_Section:Introduction-->
     </header>
-    <section id="Skill">
-      <!--Section:Skill-->
-      <h2>
-        <mark><em>Skill:</em></mark>
-      </h2>
-      <div>
-        <body>
-          <table border="1" cellpadding="5" cellspacing="0">
+    <main>
+      <section id="Skill" class="card">
+        <!--Section:Skill-->
+        <h2>
+          <em>Skill:</em>
+        </h2>
+        <div>
+          <table>
             <thead>
               <tr>
                 <th>Technology</th>
@@ -105,152 +107,187 @@
               </tr>
             </tbody>
           </table>
-      </div>
-      <div>
-         <!--add some html_5 tag-->
-    <h3>Skill Progress:</h3>
-    <div>
-      <label for="HTML Progress">HTML:</label>
-      <progress id="HTML Progress" value="90" max="100">90%</progress>
-    </div>
-    <div>
-      <label for="CSSProgress">CSS:</label>
-      <progress id="CSSProgress" value="40" max="100">40%</progress>
-    </div>
-   <div>
-    <label for="JAVA Progress">HTML:</label>
-    <progress id="JAVA Progress" value="20" max="100">20%</progress>
-   </div>
-    <h3>Experience Level:</h3>
-    <label for="Experience_Progress"> Experience </label>
-    <meter id="Experience_Progress" min="0" max="10" value="2">
-      2 years experience
-    </meter>
-      </div>
-      <h3>The Project Management Lifecycle</h3>
-      <ol>
-        <li><strong>Initiating</strong></li>
-        <li><strong>Planning</strong></li>
-        <li><strong>Execute and complete tasks</strong></li>
-        <li><strong>Close projects</strong></li>
-      </ol>
-      <!--END_Section:Skill-->
-    </section>
-    <section id="Project">
-      <!--Section:Project-->
-      <h2>
-        <mark><em>Project:</em></mark>
-      </h2>
-      <ul>
-        <li>Now, I have no project.</li>
-      </ul>
-      <!--END_Section:Skill-->
-    </section>
-    <section id="Education and Experience">
-      <!--Section:Education and Experience-->
-      <h2>
-        <mark><em>Education and Experience:</em></mark>
-      </h2>
-      <table border="1" cellpadding="15" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Institution</th>
-            <th>Degree</th>
-            <th>Duration</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Northern University of Business and Technology Khulna</td>
-            <td>BSc in computer science and Engineering</td>
-            <td>2022-2026</td>
-          </tr>
-          <tr>
-            <td>Ahsanullah College khulna</td>
-            <td>Higher Secondary Certificate(HSC)</td>
-            <td>2018-2020</td>
-          </tr>
-          <tr>
-            <td>Gilatala Govt ML HIgh School Rampal,Bagerhat.</td>
-            <td>Secondary School Certificate (SSC)</td>
-            <td>2016-2018</td>
-          </tr>
-        </tbody>
-      </table>
-      <!--End_Section:Education and Experience-->
-    </section>
-    <footer id="Contact Form">
-      <!--Footer:Contact Form-->
-      <h2>
-        <mark><em>Contact:</em></mark>
-      </h2>
-      <form action="https://formspree.io/f/xknddwve" method="POST">
-        
-          <lebel for="Name"> Name: </lebel> 
-          <input type="text" id="name " name="name" required />
-        
-        
-          <lebel for="Email"> Emali: </lebel> 
-          <input type="text" id="Email " name="Email" required />
-        
-        
-          <lebel for="Subject"> Subject: </lebel> 
-          <select type="subject" id="Subject " name="Subject" required>
-            <option value="job">job</option>
-            <option value="inquiry">inquiry</option>
-            <option value="feedback">feedback</option>
-          </select>
-        
-        
-          <label for="Image">Upload Image:</label>
-          <input type="file" id="Image" name="Image" accept="image/*" />
-        
+        </div>
+        <div>
+          <!--add some html_5 tag-->
+          <h3>Skill Progress:</h3>
+          <div>
+            <label for="HTML Progress">HTML:</label>
+            <progress id="HTML Progress" value="90" max="100">90%</progress>
+          </div>
+          <div>
+            <label for="CSSProgress">CSS:</label>
+            <progress id="CSSProgress" value="40" max="100">40%</progress>
+          </div>
+          <div>
+            <label for="JAVA Progress">HTML:</label>
+            <progress id="JAVA Progress" value="20" max="100">20%</progress>
+          </div>
+          <h3>Experience Level:</h3>
+          <label for="Experience_Progress"> Experience </label>
+          <meter id="Experience_Progress" min="0" max="10" value="2">
+            2 years experience
+          </meter>
+        </div>
+        <h3>The Project Management Lifecycle</h3>
+        <ol>
+          <li><strong>Initiating</strong></li>
+          <li><strong>Planning</strong></li>
+          <li><strong>Execute and complete tasks</strong></li>
+          <li><strong>Close projects</strong></li>
+        </ol>
+        <!--END_Section:Skill-->
+      </section>
+      <section id="Project" class="card">
+        <!--Section:Project-->
+        <h2>
+          <em>Project:</em>
+        </h2>
+        <ul>
+          <li>Now, I have no project.</li>
+        </ul>
+        <!--END_Section:Skill-->
+      </section>
+      <section id="Education and Experience" class="card">
+        <!--Section:Education and Experience-->
+        <h2>
+          <em>Education and Experience:</em>
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Institution</th>
+              <th>Degree</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Northern University of Business and Technology Khulna</td>
+              <td>BSc in computer science and Engineering</td>
+              <td>2022-2026</td>
+            </tr>
+            <tr>
+              <td>Ahsanullah College khulna</td>
+              <td>Higher Secondary Certificate(HSC)</td>
+              <td>2018-2020</td>
+            </tr>
+            <tr>
+              <td>Gilatala Govt ML HIgh School Rampal,Bagerhat.</td>
+              <td>Secondary School Certificate (SSC)</td>
+              <td>2016-2018</td>
+            </tr>
+          </tbody>
+        </table>
+        <section id="Contact Form">
+          <!--Contact Form-->
+          <fieldset>
+            <legend>
+              <h2>
+                <em>Contact:</em>
+              </h2>
+            </legend>
 
-        
-          <label for="age">AGE:</label>
-          <input type="number" name="age" id="age" min="18" max="55" required />
-        
-        
-          <label for="website">Website:</label>
-          <input type="url" id="website" name="website" pattern="https?://.+" />
-        
-        
-          <label for="message">Message:</label> <br />
+            <form action="https://formspree.io/f/xknddwve" method="POST">
+              <lebel for="Name"> Name: </lebel>
+              <input type="text" id="name " name="name" required /> <br />
 
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        
-        
-          <button type="submit">Submit</button>
-          <button type="reset">Clear</button>
-      
-        <br/>
-      </form>
+              <lebel for="Email"> Emali: </lebel>
+              <input type="text" id="Email " name="Email" required />
+              <br />
+
+              <lebel for="Subject"> Subject: </lebel>
+              <select type="subject" id="Subject " name="Subject" required>
+                <option value="job">job</option>
+                <option value="inquiry">inquiry</option>
+                <option value="feedback">feedback</option>
+              </select>
+              <br />
+
+              <label for="Image">Upload Image:</label>
+              <input type="file" id="Image" name="Image" accept="image/*" />
+              <br />
+
+              <label for="age">AGE:</label>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="18"
+                max="55"
+                required
+              />
+              <br />
+
+              <label for="website">Website:</label>
+              <input
+                type="url"
+                id="website"
+                name="website"
+                pattern="https?://.+"
+              />
+              <br />
+
+              <label for="message">Message:</label> <br />
+
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <br />
+
+              <button type="submit">Submit</button>
+              <button type="reset">Clear</button>
+
+              <br />
+            </form>
+          </fieldset>
+        </section>
+
+        <!--End_Section:Education and Experience-->
+      </section>
+    </main>
+    <footer class="card">
+      <p class="copy">Copyright reserved by &copy; Razibul Islam Zim</p>
+
+      <div class="social-media">
+        <br />
+        <!--absolut link -->
+        <a target="_blank" href="https://github.com/razibul-zim">
+          <i class="fa-brands fa-github"></i>
+          Github account</a
+        >
+        <br />
+        <br />
+
+        <!--relative link-->
+        <a target="_blank" href="tel:01860664122">
+          <i class="fa-solid fa-phone"></i>Call Me</a
+        >
+        <br />
+        <br />
+        <a target="_blank" href="mailto:rjrajibulislam1971@gmail.com"
+          ><i class="fa-regular fa-envelope"></i>E-mail Me</a
+        >
+        <br />
+        <br />
+      </div>
+      <br />
       <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58839.433906363316!2d89.47908511370153!3d22.822293767652013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff90089b891173%3A0xbd0758d8f997065b!2sShib%20Bari%20Circle%2C%20Khulna!5e0!3m2!1sen!2sbd!4v1718025850843!5m2!1sen!2sbd"
-        title="home map"
-        width="300" 
-         height="250" 
-         style="border:0;" 
-         allowfullscreen="" 
-         loading="lazy" 
-         referrerpolicy="no-referrer-when-downgrade">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58839.433906363316!2d89.47908511370153!3d22.822293767652013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff90089b891173%3A0xbd0758d8f997065b!2sShib%20Bari%20Circle%2C%20Khulna!5e0!3m2!1sen!2sbd!4v1718025850843!5m2!1sen!2sbd"
+          title="home map"
+          width="300"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
         </iframe>
       </div>
-      <p>Copyright reserved by &copy; Razibul Islam Zim</p>
-
-      <!--absolut link -->
-      <a target="_blank" href="https://github.com/razibul-zim">
-        <i class="fa-brands fa-github"></i>
-        Github account</a
-      >
-      <br />
-
-      <!--relative link-->
-      <a href="tel:01860664122"> <i class="fa-solid fa-phone"></i>Call Me</a>
-      <br />
-      <a href="mailto:rjrajibulislam1971@gmail.com"
-        ><i class="fa-regular fa-envelope"></i>E-mail Me</a
-      >
       <!--End_footer:Contact Form-->
     </footer>
   </body>
