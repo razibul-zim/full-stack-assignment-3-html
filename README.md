@@ -1,6 +1,6 @@
 # My portfolio live preview
 
 ```
-https://razibul1.netlify.app/portfolio
+https://razibul-zim.github.io/full-stack-assignment-3-html/portfolio.html
 
 ```
