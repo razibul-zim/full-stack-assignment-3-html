@@ -6,6 +6,13 @@
   --card-color: #f5f2db;
 }
 
+nav > ul {
+  display: flex;
+  font-size: 1.2rem;
+  padding: 2rem 7rem;
+  justify-content: center;
+}
+
 body {
   background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
@@ -31,17 +38,19 @@ button {
 nav {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  text-align: center;
+
   box-shadow: 0 0.2rem 0.4rem black;
 }
 
-.navi:hover {
-  background-color: rgb(183, 109, 24);
-}
 nav > ul > li > a {
   color: var(--secondary-color);
   text-decoration: none;
   font-weight: bold;
+  padding: 0 1.2rem;
+}
+
+nav > ul > li > a:hover {
+  color: var(--card-color);
 }
 nav > ul > li {
   list-style: none;
@@ -62,28 +71,40 @@ footer {
   text-align: center;
 }
 
-.social-media {
-  background-color: var(--primary-color);
-}
-.social-media:hover {
-  background-color: rgb(183, 109, 24);
-}
-
-.social-media a {
-  color: var(--secondary-color);
+.social-media > ul > li > a {
+  color: black;
   font-weight: bold;
+  font-size: 1.3rem;
+  padding: 0rem 0.4rem;
 }
-
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  padding: 0;
+  gap: 0rem;
+  list-style: none;
+}
+.social-media > h3 {
+  text-align: center;
+  color: black;
+}
 .copy {
   color: black;
   font-weight: bold;
   font-size: 1.5rpm;
 }
+.copy_1 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rpm;
+  margin-top: -0.7rem;
+}
 
 .card {
   background-color: var(--card-color);
   border-radius: 0.5rpm;
-  margin: 1.2rpm;
+  margin: 1.3rpm;
   padding: 1.5rpm 0;
   box-shadow: 0 0.2rem 0.4rem black;
 }
@@ -134,3 +155,34 @@ textarea {
 #project {
   padding: 2rem 0;
 }
+
+footer > main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+#foot {
+  background-color: var(--card-color);
+  border-radius: 0.5rpm;
+  margin-top: 2rem;
+  margin: 1.3rpm;
+  padding: 1.5rpm 0;
+  box-shadow: 0 0.2rem 0.4rem black;
+}
+
+/* responsiveness start here */
+@media screen and (max-width: 900px) {
+  footer > main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav > ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* responsiveness end here */
